@@ -1,0 +1,7 @@
+package com.kalkan.calculator.calcmain;
+
+import javax.swing.JFrame;
+
+public class Screen extends JFrame{
+
+}

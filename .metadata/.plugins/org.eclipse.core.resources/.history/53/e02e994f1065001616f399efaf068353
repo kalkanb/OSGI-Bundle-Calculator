@@ -1,0 +1,5 @@
+package com.kalkan.calculator.diffservice;
+
+public class DiffImpl {
+
+}

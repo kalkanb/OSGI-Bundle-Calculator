@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HelloWorld Plug-in
+Bundle-SymbolicName: com.javaworld.sample.HelloWorld
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.javaworld.sample.helloworld.Activator
+Bundle-Vendor: JAVAWORLD
+Import-Package: com.javaworld.sample.service.impl,
+ org.osgi.framework;version="1.3.0"

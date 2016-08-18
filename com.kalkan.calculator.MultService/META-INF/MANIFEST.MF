@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MultService
+Bundle-SymbolicName: com.kalkan.calculator.MultService
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.kalkan.calculator.multservice.MultServiceActivator
+Bundle-Vendor: KALKAN
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: com.kalkan.calculator.calculatorcore,
+ org.osgi.framework;version="1.3.0"

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CalcMain
+Bundle-SymbolicName: com.kalkan.calculator.CalcMain
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.kalkan.calculator.calcmain.MainActivator
+Bundle-Vendor: KALKAN
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: com.kalkan.calculator.calcopsum,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy

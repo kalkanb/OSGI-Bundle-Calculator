@@ -1,0 +1,7 @@
+package com.kalkan.calculator.calcopsum;
+
+public interface Sum {
+	public int sum2(int a, int b);
+	public void setA(int a);
+	public void setB(int b);
+}

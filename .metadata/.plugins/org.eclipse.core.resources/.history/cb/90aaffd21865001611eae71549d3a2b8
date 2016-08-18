@@ -1,0 +1,5 @@
+package com.kalkan.calculator.calculatorcore;
+
+public interface Mult {
+
+}

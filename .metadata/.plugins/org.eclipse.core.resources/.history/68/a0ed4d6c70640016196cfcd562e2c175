@@ -1,0 +1,36 @@
+package com.kalkan.calculator.calcmain;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+
+import com.kalkan.calculator.calculatorcore.Sum;
+
+public class Activator implements BundleActivator {
+	ServiceReference sumServiceReference;
+    public void start(BundleContext context) throws Exception {
+        System.out.println("Hello World!!");
+        sumServiceReference= context.getServiceReference(Sum.class.getName());
+        Sum sumInt =(Sum)context.getService(sumServiceReference);
+        int a = 1, b = 2;
+        System.out.println(sumInt.sum2(a, b));
+
+    }
+    public void stop(BundleContext context) throws Exception {
+        System.out.println("Goodbye World!!");
+        context.ungetService(sumServiceReference);
+    }
+    
+    /*ServiceReference helloServiceReference;
+    public void start(BundleContext context) throws Exception {
+        System.out.println("Hello World!!");
+        helloServiceReference= context.getServiceReference(HelloService.class.getName());
+        HelloService helloService =(HelloService)context.getService(helloServiceReference);
+        System.out.println(helloService.sayHello());
+
+    }
+    public void stop(BundleContext context) throws Exception {
+        System.out.println("Goodbye World!!");
+        context.ungetService(helloServiceReference);
+    }*/
+}

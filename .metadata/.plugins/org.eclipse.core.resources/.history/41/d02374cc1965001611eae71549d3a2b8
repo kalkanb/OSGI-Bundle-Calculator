@@ -1,0 +1,5 @@
+package com.kalkan.calculator.multservice;
+
+public class MultImpl {
+
+}

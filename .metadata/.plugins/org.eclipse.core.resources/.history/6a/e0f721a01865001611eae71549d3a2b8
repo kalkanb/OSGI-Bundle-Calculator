@@ -1,0 +1,34 @@
+package com.kalkan.calculator.calcmain;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+
+import com.kalkan.calculator.calculatorcore.Diff;
+import com.kalkan.calculator.calculatorcore.Sum;
+
+
+
+public class MainActivator implements BundleActivator {
+	SumServiceTracker sumServiceTracker;
+	DiffServiceTracker diffServiceTracker;
+    public void start(BundleContext context) throws Exception {
+        System.out.println("Hello World!!");
+        diffServiceTracker= new DiffServiceTracker(context);
+        diffServiceTracker.open();
+        sumServiceTracker= new SumServiceTracker(context);
+        sumServiceTracker.open();
+        int a = 0, b = 0;
+        Sum sumInt = (Sum)sumServiceTracker.getService();
+        Diff diffInt = (Diff)diffServiceTracker.getService();
+        
+        System.out.println(a + " + " + b + " = " + sumInt.sum2(a, b));
+        System.out.println(a + " - " + b + " = "  + diffInt.diff2(a, b));
+
+    }
+    public void stop(BundleContext context) throws Exception {
+        System.out.println("Goodbye World!!");
+        sumServiceTracker.close();
+        diffServiceTracker.close();
+    }
+}

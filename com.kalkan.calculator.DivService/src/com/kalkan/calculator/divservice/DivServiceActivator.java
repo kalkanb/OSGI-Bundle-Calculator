@@ -1,0 +1,19 @@
+package com.kalkan.calculator.divservice;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceRegistration;
+
+import com.kalkan.calculator.calculatorcore.Div;
+
+public class DivServiceActivator implements BundleActivator {
+	ServiceRegistration serviceRegistration;
+	public void start(BundleContext context) throws Exception {
+		Div divInt = new DivImpl();
+		serviceRegistration = context.registerService(Div.class.getName(), divInt, null);
+	}
+
+	public void stop(BundleContext context) throws Exception {
+		serviceRegistration.unregister();
+	}
+}

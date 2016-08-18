@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.kalkan.calculator.diffservice.Activator&apos; to &apos;DiffServiceActivator&apos;&#x0A;- Original project: &apos;com.kalkan.calculator.DiffService&apos;&#x0A;- Original element: &apos;com.kalkan.calculator.diffservice.Activator&apos;&#x0A;- Renamed element: &apos;com.kalkan.calculator.diffservice.DiffServiceActivator&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Activator&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.kalkan.calculator.diffservice{Activator.java[Activator" matchStrategy="1" name="DiffServiceActivator" qualified="false" references="true" similarDeclarations="false" stamp="1471503066951" textual="false" version="1.0"/>
+</session>

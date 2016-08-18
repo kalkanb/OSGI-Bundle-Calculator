@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.javaworld.sample.helloservice.HelloService"/>
+<fullyQualifiedTypeName name="com.javaworld.sample.service.impl.HelloServiceImpl"/>
+<fullyQualifiedTypeName name="org.osgi.framework.BundleActivator"/>
+<fullyQualifiedTypeName name="org.osgi.framework.ServiceFactory"/>
+<fullyQualifiedTypeName name="org.osgi.framework.Bundle"/>
+<fullyQualifiedTypeName name="org.osgi.util.tracker.ServiceTracker"/>
+<fullyQualifiedTypeName name="org.osgi.framework.BundleContext"/>
+<fullyQualifiedTypeName name="com.javaworld.sample.service.impl.HelloService"/>
+<fullyQualifiedTypeName name="org.osgi.framework.ServiceReference"/>
+<fullyQualifiedTypeName name="com.kalkan.calculator.calcopsum.SumImpl"/>
+<fullyQualifiedTypeName name="org.osgi.framework.ServiceRegistration"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.kalkan.calculator.calcopsum.Sum"/>
+<fullyQualifiedTypeName name="com.kalkan.calculator.calculatorcore.Sum"/>
+<fullyQualifiedTypeName name="com.kalkan.calculator.diffservice.DiffImpl"/>
+<fullyQualifiedTypeName name="com.kalkan.calculator.calculatorcore.Diff"/>
+</qualifiedTypeNameHistroy>

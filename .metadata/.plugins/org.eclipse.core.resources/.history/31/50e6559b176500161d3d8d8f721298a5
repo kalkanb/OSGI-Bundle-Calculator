@@ -1,0 +1,54 @@
+package com.kalkan.calculator.calcmain;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+
+import com.kalkan.calculator.calculatorcore.Diff;
+import com.kalkan.calculator.calculatorcore.Sum;
+
+
+
+public class MainActivator implements BundleActivator {
+	SumServiceTracker sumServiceTracker;
+	DiffServiceTracker diffServiceTracker;
+    public void start(BundleContext context) throws Exception {
+        System.out.println("Hello World!!");
+        diffServiceTracker= new DiffServiceTracker(context);
+        diffServiceTracker.open();
+        sumServiceTracker= new SumServiceTracker(context);
+        sumServiceTracker.open();
+        int a = 18, b = 11;
+        Sum sumInt = (Sum)sumServiceTracker.getService();
+        Diff diffInt = (Diff)diffServiceTracker.getService();
+        
+        System.out.println("result = " + sumInt.sum2(a, b));
+        System.out.println("result = " + diffInt.diff2(a, b));
+
+    }
+    public void stop(BundleContext context) throws Exception {
+        System.out.println("Goodbye World!!");
+        helloServiceTracker.close();
+    }
+    
+    /* 
+    ServiceReference sumServiceReference;
+	ServiceReference diffServiceReference;
+    public void start(BundleContext context) throws Exception {
+        
+        sumServiceReference= context.getServiceReference(Sum.class.getName());
+        Sum sumInt =(Sum)context.getService(sumServiceReference);
+        int a = 18, b = 11;
+        System.out.println("result = " + sumInt.sum2(a, b));
+        
+        diffServiceReference= context.getServiceReference(Diff.class.getName());
+        Diff diffInt =(Diff)context.getService(diffServiceReference);
+        System.out.println("result = " + diffInt.diff2(a, b));
+
+    }
+    public void stop(BundleContext context) throws Exception {
+        System.out.println("Goodbye World!!");
+        context.ungetService(sumServiceReference);
+    }
+    */
+}
