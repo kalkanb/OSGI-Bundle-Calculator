@@ -1,6 +1,6 @@
 # OSGI-Bundle-Calculator
 
-Import project to Eclipse IDE
+1. Import project to Eclipse IDE \n
 Install required bundles for equinox and apache felix
 
 Run configurations
