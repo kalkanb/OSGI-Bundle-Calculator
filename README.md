@@ -14,7 +14,7 @@ New configuration
 
 Check only the ones of calculator on workspace 
 
-Uncheck target and check onlywith help of filter: 
+Uncheck target and check only with help of filter: 
 
 Apache.felix.gogo ones(3 plugins) 
 
