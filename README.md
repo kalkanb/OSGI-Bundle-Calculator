@@ -1,17 +1,17 @@
 # OSGI-Bundle-Calculator
 
-1. Import project to Eclipse IDE \n
-Install required bundles for equinox and apache felix
+Import project to Eclipse IDE. 
+Install required bundles for equinox and apache felix. 
 
-Run configurations
-OSGI configurations
-new configuration 
-check only the ones of calculator on workspace
+Run configurations. 
+OSGI configurations. 
+New configuration.  
+Check only the ones of calculator on workspace. 
 
-uncheck target and check onlywith help of filter:
-apache.felix.gogo ones(3 plugins)
-eclipse.equinox.console(1 plugin)
+Uncheck target and check onlywith help of filter: 
+Apache.felix.gogo ones(3 plugins), 
+Eclipse.equinox.console(1 plugin). 
 
-click add required bundles
-validate bundles
-if there are no problems run the configuration
+Click add required bundles. 
+Validate bundles. 
+If there are no problems run the configuration. 
