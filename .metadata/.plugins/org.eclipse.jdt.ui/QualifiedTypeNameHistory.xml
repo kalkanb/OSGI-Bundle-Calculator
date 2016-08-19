@@ -14,7 +14,9 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.kalkan.calculator.calcopsum.Sum"/>
-<fullyQualifiedTypeName name="com.kalkan.calculator.calculatorcore.Sum"/>
 <fullyQualifiedTypeName name="com.kalkan.calculator.diffservice.DiffImpl"/>
+<fullyQualifiedTypeName name="com.kalkan.calculator.calculatorcore.Mult"/>
 <fullyQualifiedTypeName name="com.kalkan.calculator.calculatorcore.Diff"/>
+<fullyQualifiedTypeName name="com.kalkan.calculator.calculatorcore.Sum"/>
+<fullyQualifiedTypeName name="com.kalkan.calculator.calculatorcore.Div"/>
 </qualifiedTypeNameHistroy>

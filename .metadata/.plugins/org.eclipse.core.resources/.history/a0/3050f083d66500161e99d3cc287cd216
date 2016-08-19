@@ -75,7 +75,7 @@ public class Screen {
 		buttonSum.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-					num1 = (int)Double.parseDouble(textFieldNum.getText());
+					num1 = Integer.parseInt(textFieldNum.getText());
 					setOp(1);
 					operaitonLabel.setText("+");
 					textFieldNum.setText("");
@@ -93,7 +93,7 @@ public class Screen {
 		buttonDiff.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-					num1 = (int)Double.parseDouble(textFieldNum.getText());
+					num1 = Integer.parseInt(textFieldNum.getText());
 					setOp(2);
 					operaitonLabel.setText("-");
 					textFieldNum.setText("");
@@ -167,7 +167,7 @@ public class Screen {
 		buttonMult.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-					num1 = (int)Double.parseDouble(textFieldNum.getText());
+					num1 = Integer.parseInt(textFieldNum.getText());
 					setOp(3);
 					operaitonLabel.setText("x");
 					textFieldNum.setText("");
@@ -185,7 +185,7 @@ public class Screen {
 		buttonDiv.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-					num1 = (int)Double.parseDouble(textFieldNum.getText());
+					num1 = Integer.parseInt(textFieldNum.getText());
 					setOp(4);
 					operaitonLabel.setText("/");
 					textFieldNum.setText("");
